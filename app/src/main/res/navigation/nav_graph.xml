@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_books">
+
+    <fragment
+        android:id="@+id/fragment_books"
+        android:name="com.example.keepingtrack.ui.BooksFragment"
+        android:label="Books">
+        <action
+            android:id="@+id/action_booksFragment_to_addBookFragment"
+            app:destination="@id/fragment_add_book" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_add_book"
+        android:name="com.example.keepingtrack.ui.AddBookFragment"
+        android:label="Add Book">
+        <action
+            android:id="@+id/action_addBookFragment_to_booksFragment"
+            app:destination="@id/fragment_books"
+            app:popUpTo="@id/fragment_books"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_shelf"
+        android:name="com.example.keepingtrack.ui.ShelfFragment"
+        android:label="Shelf" />
+
+    <fragment
+        android:id="@+id/fragment_user"
+        android:name="com.example.keepingtrack.ui.UserFragment"
+        android:label="User" />
+</navigation>

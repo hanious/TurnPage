@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KeepingTrack</string>
+
+    <!--Bottom Navigation Bar-->
+    <string name="bottom_nav_books">Books</string>
+    <string name="bottom_nav_shelf">Shelf</string>
+    <string name="bottom_nav_user">User</string>
+    <string name="txt_reading_progress">Reading Progress:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
